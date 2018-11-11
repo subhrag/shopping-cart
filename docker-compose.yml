@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+   
+   tomcat:
+      build:
+         context: .
+         dockerfile: docker/docker-tomcat
+      ports:
+         - "8090:8080" #8080- tomcat(container) port
+         
